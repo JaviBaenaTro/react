@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /* hacer una funcion que reciba un objeto y retorne un
+    array con todos los valores de sus atributos
+    
+    hacer la clase persona
+    
+    
+    */
+    
+    class Persona{
+        constructor (nombre,apellido, color){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.color= color;
+
+        }
+
+        toString(){
+            return this.nombre + " "  + this.apellido +" " + this.color
+        }
+       
+    } 
+
+    function ejemplo(persona1,persona2,persona3){
+         return  [persona1.toString, persona2,toString, persona3.toString]
+    }
+
+    let persona1 = new Persona ("javi","baena", "negro");
+    let persona2 = new Persona ("pedro","gomez", "azul");
+    let persona3 = new Persona ("juna","perez", "rojo");
+    
+    console.log(ejemplo(persona1,persona2,persona3));
+</script>
+</html>

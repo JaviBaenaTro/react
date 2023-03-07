@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    /* objetos:  */
+    class Coche{
+        constructor (nombre){
+        this.nombre = nombre;
+        }
+        static diHola(nombre){
+            return "hola soy" + nombre;
+        }
+    } 
+    let coche1 = new Coche("Manuel");
+    console.log(Coche.diHola(coche1.nombre));
+    console.log(coche1.nombre);
+    console.log(Coche.diHola(coche1.nombre))
+    
+    
+
+    
+    /* hay que llamarlo desde la clase */
+
+   /*  console.log(coche1.diHola())  */
+
+
+    /* aqui si lo llamo desde la variable es decir desde fuera, me peta */
+/* static: un metodo estatico exite para fuera y dentro de clase, si no es estatico solo 
+exite dentro  */
+/*  */
+
+
+
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- hacer un relog que cuente los segundos desde que se ha iniciado la aplicación -->
+
+    <div id="reloj">
+        <h1></h1>
+    </div>
+</body>
+<script>
+    let reloj = document.getElementById("reloj");
+    let tiempo = 0;
+    let minutos = 0;
+
+ 
+
+    setInterval(() => {
+        reloj.innerHTML =  minutos + ":" + tiempo;
+        tiempo++;
+        if(tiempo == 60){
+            minutos++;
+            tiempo = 0;
+            
+        }
+
+    }, 1000);
+
+
+    /* ejercicio3   un formulario de un aeropuerto que contenga:
+    dos input uno con nombre y otros con apellidos
+    - un select con tres opciones que sean de distintos aeropuertos
+    - edad de usuario
+    -si el usuario es menor de 18 años de un error "tiene que ser mayor de edad paravollar
+    
+    " y el valor numerico pase a ser  0
+    -cuando le demos al botn enviar en un div debajo del formulario aparecerán los datos ç
+    del usuario y un reloj diciendo cuantos segundo hace que se compro el billete
+    
+
+     */
+
+   
+</script>
+</html>

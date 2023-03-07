@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <img class="gif" src="https://hostaledreira.com/wp-content/uploads/2020/10/loading.gif" alt="">
+    </div>
+  
+    <!--hacer un pg com gift de carga y cuando pasen x segundos cambio la imagen por un h1 que diga "han cargado los datos satisfactoria mente"   -->
+</body>
+<script>
+    let contendor = document.getElementsByClassName("contenedor");
+    let gif = document.getElementsByClassName("gif");
+    let h1 = document.createElement("h1")
+    
+    h1.innerHTML = "todo ok"
+
+    setTimeout(() => {
+        gif[0].hidden = true;
+        contendor[0].appendChild(h1);
+    }, 2000);
+</script>
+</html>

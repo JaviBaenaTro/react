@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <input type="text" placeholder="text input">
+        <input id="form" type="text" placeholder="password">
+      </form>
+    <script>
+        let form = document.getElementById("form");
+
+        function anadirEvento(){
+            form.addEventListener("blur", foco);
+        }
+
+        function foco(){
+            let a = document.getElementById("form");
+
+            if(form.value.length  < 7 ){
+                alert("incorrecto");
+                a.style.backgroundColor="red";
+            }
+        }
+
+
+        window.onload = anadirEvento();
+    </script>
+</body>
+</html>

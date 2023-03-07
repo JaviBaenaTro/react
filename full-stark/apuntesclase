@@ -1,0 +1,20 @@
+
+cliente = navegador
+
+
+varible: alamacena un informacion
+
+let no puedes redefirnirlo, es mas seguro trabajar con let que con var, puedes hacer por ejemplo, let = a y luego a = 3. a = 4 pero no podrias hacer let = b
+da mas seguridad
+
+const: usada con funciones, y cosas que no vayan a cambiar,valor fijo
+
+js tipado: le indicas que valor quieres que  sea...
+
+(usar boostrap para carrosules )
+
+
+
+
+
+se pone abajo para que cuando sea le el resto este ya este ejecutado

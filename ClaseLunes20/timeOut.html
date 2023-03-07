@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="h1">Aqui estamos</h1>
+   <input type="button" value="clickame" id="boton">
+</body>
+<script>
+/*     setTimeout(() => {
+      
+    }, 1000);
+
+
+    setInterval(() => {
+        
+    }, interval);
+ */
+
+ let h1 = document.getElementById("h1");
+ let boton = document.getElementById("boton");
+
+
+    function anadirEventos() {
+        boton.addEventListener("click", paraintervalo)
+    }function  paraintervalo() {
+        setTimeout(() => {
+            clearInterval(intervalo)
+
+        }, 1000);
+    }
+
+ let intervalo = setInterval(() => {
+     if( h1.style.color == "black") {
+        h1.style.color = "green"
+     }
+     else{
+         h1.style.color = "black"
+     }
+ },1000);
+
+window.load = anadirEventos()
+
+</script>
+</html>

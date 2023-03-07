@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Promesa/Asincronia
+        es mas habil, 
+
+        Los diferentes procesos trascuren uno independiente de otro, da mas agilidad. Se pueden ejecutar a la vez, en lugar
+        de ejecutarse uno trás otro.De esta manera la página funciona mejor, todo se carga a la vez
+
+        una promesa, cuando sucede algo, la promesa la gestiona el resultado, si sale bien o mal
+
+        que hará en caso de que algo ocurra o no. Gestiona el error;
+
+        una promesa, no tiene forma física, 
+
+        Fetch(hola.txt)
+        esto puede pasar o no, entonces entra en juego la promesa
+
+        ------Fetch(hola.txt).them(funtion...)
+
+        coge fetch y entonces tendra lugar la funcion en funcion de si lo encuentra o no;
+
+
+        -------- Fetch(hola.txt).them(funtion...).catch(sadvadv)
+         si lo coge ejecuta el them si no el catch;
+
+         ------- Fetch(hola.txt).them(funtion...).finally()
+          finally: haga algo tanto como si se sale bien como si sale mal
+
+
+    
+    -->
+</body>
+<script>
+
+    fetch("hola.txt")
+    
+    .then( function Si(responde) {
+        console.log("ahora");
+        return responde.text(); /* importa para que abrá la siguiente */
+        /* con las funciones flechas te olvidas de poner el rerurn
+        si pones varios them */
+    })
+    .then( function Si(responde) {
+        console.log("ahora"); 
+    })
+    .catch(function No(responde) {
+        console.log("ahora");
+    })
+    .finally(function Siempre(responde) {
+        console.log("ahoraSiempre"); 
+    });
+
+
+
+</script>
+</html>
