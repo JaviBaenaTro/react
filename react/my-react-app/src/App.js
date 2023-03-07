@@ -1,25 +1,24 @@
 
+import { useState, useEffect, useRef, useReducer} from "react";
 
-import { useEffect, useState, useRef } from "react";
+const state = [{
+  id:1,
+  name: "terminar esta clase",
+  isCompleted: false,
+},
+];
 
-function App() {
+const reducer = () =>{}
 
-    let inputEl = useRef(null);
+function App(){
 
-  useEffect(() => {
-    inputEl.current.focus();
-  }, []),
-  };
-
-    return(<div>
-        <input ref={inputEl} type="text"> 
-        </input>
-        <button onClick={onClickBoton}>
-            enfoca!
-        </button>
-    </div>)
+  return <></>
 }
 
+
+
+/* un pg donde el usuario puede agregar elementos a una lista de cosas que hacer y el usuario va a poder marcar o
+no como completado o no un elemento de la lista*/
 
 
 export default App;
